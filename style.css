@@ -1,6 +1,16 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+main {
+    width: 80px;
+    margin: 30px;
+}
+h2 {
+    color: #2c6e49;
+    border-left: 6px solid #2c6e49;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+p {
+    line-height: 1.8;
+}
+ul{
+    line-height: 2;
 }
