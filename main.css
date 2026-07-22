@@ -1,8 +1,10 @@
 h1{
-    color:#006994;
+    color:white;
     text-align:center;
-    font-size: 38px;
+    font-weight: bold;
+    font-size: 32px;
     margin: 40px;
+    justify-self: unset;
 }
 ul{
     display: flex;
@@ -27,5 +29,14 @@ a:hover{
     color:darkgray
 }
 body{
-    background-color: ;
+    background-image:url(https://wallpaperaccess.com/full/1881714.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    margin:0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px;
 }
