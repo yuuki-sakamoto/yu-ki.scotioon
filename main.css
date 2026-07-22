@@ -9,7 +9,7 @@ h1{
 ul{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap:20px;
     list-style: none;
     flex-wrap: wrap;
     padding:20px;
