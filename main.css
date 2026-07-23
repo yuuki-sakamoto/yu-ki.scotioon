@@ -1,0 +1,42 @@
+h1{
+    color:white;
+    text-align:center;
+    font-weight: bold;
+    font-size: 32px;
+    margin: 40px;
+    justify-self: unset;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    list-style: none;
+    flex-wrap: wrap;
+    padding:20px;
+}
+a{
+    display: inline-block;
+    padding: 15px 20px;
+    background-color:black;
+    color:white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+a:hover{
+    background-color:linen;
+    color:darkgray
+}
+body{
+    background-image:url(https://wallpaperaccess.com/full/1881714.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    margin:0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px;
+}
