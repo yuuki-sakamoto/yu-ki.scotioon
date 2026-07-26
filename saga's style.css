@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f7f6f2; 
+
     
 }
 
@@ -37,10 +38,6 @@ h3{
     font-size:2rem;
 }
 
-.bigbox{
-    position: relative;
-    width: 100%;
-}
 .hero1-img{
     width: 100%;
     height: auto;
@@ -48,17 +45,112 @@ h3{
     margin: 0;
 }
 
-h1{
-    position: absolute;
-    top: 90%;
-    left: 40px;
-    
-    font-size: 4rem;
-    color: #ffffff;
-    font-weight: bold;
-    width: 100%;
-    text-align: left;
-    margin: 0;
-
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+.img-caption {
+    text-align: center;      
+    font-size: 0.85rem;      
+    color: #666666;          
+    margin-top: 6px;         
+    margin-bottom: 20px;      
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.back-btn {
+    position : fixed;
+    bottom : 20px;
+    right : 20px;
+    z-index: 1000;
+
+    display: inline-block;
+    margin: 12px 24px;
+    padding: 10px 20px;
+    background-color: #d25656;
+    color: #fefefe;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #b84343;
+    transform: scale(1.05);
+}
+
+.bigbox {
+    position: relative;
+    width: 100%;
+    height: 700px; 
+    background: url("ayu's img/楼門TOP.jpg") center 35% / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+
+    align-items: flex-start;
+    padding: 20px 20px 10px 20px; 
+    box-sizing: border-box;
+}
+
+.bigbox h1 {
+    color: #ffffff;
+    font-size: 4.0rem;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 3px;
+
+    -webkit-text-stroke: 1.5px #2b1f1d;
+    paint-order: stroke fill;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+}
+
+.bigbox .page-nav {
+    background: transparent; 
+    padding: 0;
+    margin: 0;
+    max-width: auto;
+    align-self: center;
+    text-align: center;
+}
+
+.bigbox .page-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.bigbox .page-nav a {
+    display: inline-block;
+    padding: 8px 16px;
+    background: rgba(0, 221, 255, 0.5);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); 
+    transition: all 0.2s ease;
+    
+}
+
+.bigbox .page-nav a:hover {
+    background: #004080;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.map-container {
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
