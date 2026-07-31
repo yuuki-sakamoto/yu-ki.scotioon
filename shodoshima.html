@@ -52,7 +52,7 @@
 </p><br>
 
 <h3>あずきベーカリー</h3>
-<img src="pan.jpg" width="300" alt="あずきベーカリー">
+<img src="azuki.jpg" width="300" alt="あずきベーカリー">
 <p>あずきベーカリーは、小さな古民家を利用した落ち着いた雰囲気のパン屋さんです。地元の人からも
     愛されており、種類豊富なパンがそろっているため、子どもから大人まで幅広い世代に人気があります。
     特におすすめなのは、程よい甘さのあんことバターの相性が抜群の「あんバター」です。人気のパンは
@@ -64,7 +64,7 @@
 </P><br>
 
 <h3>珈琲とおやつ　タコのまくら</h3>
-<img src="cafe.jpg" width="300" alt="タコのまくら">
+<img src="tako1.jpg" width="300" alt="タコのまくら"><img src="tako2.jpg" width="265" alt="タコのまくら">
 <p>タコのまくらは、古民家を改築した海を眺めながらゆったりと過ごせるカフェです。こだわりの珈琲と
     おかしを楽しめるほか、小豆島ならではの飲み物も味わうことができます。季節ごとに異なるスイーツを楽しめるのも
     魅力の一つです。特におすすめなのは、たっぷりいちごがのった「こぼれるいちごのパイ」です。人気メニューは
@@ -74,7 +74,31 @@
     ‣営業日　10～6月：一か月のうちどこかの一週間(<a href="https://www.instagram.com/takomaku88/" target="_blank">Instagram</a>に記載)<br>
     　　　　　7～8月：水・木・金・土曜日<br>
     ‣営業時間　11:00～16:30(L.O. 16:00)
-</P>
+</P><br><br>
+
+<h4>小豆島クイズ</h4>
+<p>Q.小豆島で有名な植物はどれでしょう？</p>
+
+<button onclick="checkAnswer('A')">オリーブ</button>
+<button onclick="checkAnswer('B')">白樺</button>
+<button onclick="checkAnswer('C')">柿</button>
+
+<p id="result"></p>
+
+<script>
+    function checkAnswer(answer){
+        const result = document.getElementById("result");
+        
+        if(answer == "A"){
+            result.innerHTML = "○　正解！　オリーブです！";
+            result.style.color = "green";
+        }
+        else{
+            result.innerHTML = "✖　不正解！　正解は「オリーブ」でした！";
+            result.style.color = "red";
+        }
+    }
+</script>
 </body>
 </html>
 
