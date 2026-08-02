@@ -56,15 +56,25 @@ body{
     position: absolute;
     width: 40px;
     height: auto;
+    
     opacity: 0;
-
+    transform: translateY(-300px);
     transform-origin: bottom center;
+    
+    animation: stabbing 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
+
+.pin1{animation-delay: 0.2s; }
+.pin2{animation-delay: 0.5s; }
+.pin3{animation-delay: 0.8s; }
+.pin4{animation-delay: 0.11s; }
+.pin5{animation-delay: 0.14s; }
+.pin6{animation-delay: 0.17s; }
 
 @keyframes stabbing{
     0%{
         opacity: 0;
-        transform: translateY(-200px) scaleY(1.2);
+        transform: translateY(-300px) scaleY(1.2);
     }
     70%{
         opacity:1 ;
@@ -74,7 +84,4 @@ body{
         opacity: 1;
         transform: translate(0) scaleY(1);
     }
-}
-.pin.drop{
-    animation: stabbing 0.4s cubic-beziser(0.175, 0.885, 0.32, 1.275) forwards;
 }
