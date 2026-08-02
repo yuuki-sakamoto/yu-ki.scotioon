@@ -29,7 +29,7 @@ a:hover{
     color:darkgray
 }
 body{
-    background-image:url(mainphoto.jpg);
+    background-image:url(map.png);
     background-size: cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -39,6 +39,8 @@ body{
     align-items: center;
     text-align: center;
     padding: 60px;
+    position: relative;
+    overflow: hidden;
 }
 
 #clock {
@@ -48,4 +50,31 @@ body{
     font-size: 20px;
     color: white;
     font-weight: bold;
+}
+
+.pin{
+    position: absolute;
+    width: 40px;
+    height: auto;
+    opacity: 0;
+
+    transform-origin: bottom center;
+}
+
+@keyframes stabbing{
+    0%{
+        opacity: 0;
+        transform: translateY(-200px) scaleY(1.2);
+    }
+    70%{
+        opacity:1 ;
+        transform: translateY(0) scaleY(0.7);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0) scaleY(1);
+    }
+}
+.pin.drop{
+    animation: stabbing 0.4s cubic-beziser(0.175, 0.885, 0.32, 1.275) forwards;
 }
