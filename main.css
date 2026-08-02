@@ -67,9 +67,9 @@ body{
 .pin1{animation-delay: 0.2s; }
 .pin2{animation-delay: 0.5s; }
 .pin3{animation-delay: 0.8s; }
-.pin4{animation-delay: 0.11s; }
-.pin5{animation-delay: 0.14s; }
-.pin6{animation-delay: 0.17s; }
+.pin4{animation-delay: 1.1s; }
+.pin5{animation-delay: 1.4s; }
+.pin6{animation-delay: 1.7s; }
 
 @keyframes stabbing{
     0%{
