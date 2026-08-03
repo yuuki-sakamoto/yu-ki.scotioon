@@ -1,0 +1,75 @@
+
+body {
+    margin: 0;
+    font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.8;
+}
+header {
+    background: linear-gradient(135deg, #4a90e2, #74b9ff);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 18px;
+    max-width: 900px;
+    margin: auto;
+}
+article {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+h2 {
+    color: #0d6efd;
+    border-left: 8px solid #0d6efd;
+    padding-left: 12px;
+    margin-top: 40px;
+}
+
+h3 {
+    color: #009688;
+    margin-top: 25px;
+}
+p {
+    font-size: 17px;
+    text-align: justify;
+}
+img {
+    display: block;
+    width: 700px;
+    height: 450px;
+    margin: 20px auto 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+    object-fit: cover; 
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+img {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+img.show {
+    opacity: 1;
+    transform: translateY(0);
+}
